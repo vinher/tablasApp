@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TablasApp"
         tools:targetApi="31">
+        <meta-data
+            android:name="androidx.appcompat.app.AppCompatDelegate.DefaultNightMode"
+            android:value="1" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

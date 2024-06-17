@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@color/color_card_excersises"
+        android:layout_margin="8sp"
+        android:theme="@style/Animation.Design.BottomSheetDialog"
+        android:orientation="vertical"
+        android:padding="16sp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Respuesta: ">
+        </TextView>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Ejercicio : "/>
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/init_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="8sp"
+                android:layout_marginRight="8sp"
+                android:text="1"/>
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="De : "/>
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="8sp"
+                android:layout_marginRight="8sp"
+                android:text="5"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/res_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/validRes"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:hint="Ingresa la respuesta"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_marginTop="8sp"
+            android:id="@+id/aceptar"
+            android:backgroundTint="@color/color_card_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar">
+
+        </Button>
+    </LinearLayout>
+
