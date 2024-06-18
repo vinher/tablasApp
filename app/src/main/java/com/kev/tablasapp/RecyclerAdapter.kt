@@ -22,11 +22,14 @@ class RecyclerAdapter(private val data:ArrayList<String>):RecyclerView.Adapter<R
 
     class ViewHolder(view: View):RecyclerView.ViewHolder(view){
         val textView:TextView
-        //val card:CardView
+        val card:CardView
+        var colors = arrayOf("#2a9d8f","#E9D2F4","#e9c46a","#06d6a0","#7209b7","#d90429","#006d77","#ff6700","#fb6f92","#ffbf69")
         init{
             textView = view.findViewById(R.id.select_result)
-            //card     = view.findViewById<CardView?>(R.id.card_bakground)
-            //card.setBackgroundColor(Color.parseColor("#E9D2F4"))
+            card     = view.findViewById<CardView?>(R.id.card_bakground)
+            card.setBackgroundColor(Color.parseColor(colors.random()))
+            card.cardElevation =  6f
+            card.radius = 16f
         }
 
     }

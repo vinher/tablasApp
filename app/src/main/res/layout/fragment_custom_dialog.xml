@@ -86,8 +86,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/validRes"
                 android:singleLine="true"
+                android:textColor="@color/white"
                 android:inputType="number"
                 android:layout_width="match_parent"
+                android:textColorHint="@color/white"
                 android:hint="Ingresa la respuesta"
                 android:layout_height="wrap_content">
 

@@ -12,15 +12,12 @@
         android:layout_margin="4sp"
         app:cardCornerRadius="16sp"
         tools:ignore="MissingConstraints"
-
         android:id="@+id/card_bakground">
         <LinearLayout
             android:padding="16sp"
-            android:background="@color/color_card_excersises"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <TextView
                 android:textAlignment="center"
                 android:id="@+id/select_result"
